@@ -7,3 +7,20 @@ WFC Control for Android and Magisk
 - 模块环境：WFC Control 0.5.7 使用 Magisk 31.1。体验优化 APK 0.2.0 使用 LSPosed 2.2.1。
 - 网络与 SIM：连接 Wi-Fi、开启飞行模式、关闭移动数据，只插一张实体 SIM。
 - **运营商仅在 VOXI 上实测可用。** 其他运营商、机型和 ROM 的兼容性尚未验证。
+
+## WFC Control ADB 0.1.0 · 实验预览
+
+**未经真机验证。** Redmi Note 12 Turbo（marble）／江南 4.0.5／Android 17／VOXI 是计划验证的环境。现有 Magisk 版曾在这套环境验证，免 root 版的 IMS 状态读取、启用、切槽和复原都还需要真机确认。
+
+这个 APK 通过无线调试启动的 Shizuku 使用 ADB 的 `shell` 身份。支持手动查看状态和尝试连接 Wi-Fi Calling。后台自动重连、LSPosed 体验优化和小米 SIM 激活短信拦截目前仅在原版提供。
+
+### 操作流程
+
+1. 在 Android 12 或更新版本安装 [Shizuku 13+](https://shizuku.rikka.app/download/) 和[预发布页](https://github.com/1e0sig/WifiCallingLab/releases/tag/adb-v0.1.0-preview)的 `WFC-Control-ADB-0.1.0-preview.apk`。
+2. 连接 Wi-Fi。在开发者选项开启「无线调试」，按 [Shizuku 启动指南](https://shizuku.rikka.app/guide/setup/#start-via-wireless-debugging) 完成配对并启动。确认 Shizuku 显示正在运行。手机重启后需再次启动 Shizuku。
+3. 保留一张活动实体 SIM，开启飞行模式，确认移动数据关闭，并确认 Wi-Fi 仍连接。先结束正在进行的通话。
+4. 打开 WFC Control ADB，点「连接 Shizuku」并授权。如果显示「Wi-Fi Calling 已连接」，状态已满足 Wi-Fi IMS 注册、语音能力及系统 WFC 可用三项检查。
+5. 未连接时点「连接 Wi-Fi Calling」，等待 IMS 注册。如果仍未连接，并且手机有两个可拆卸实体卡槽、只插了一张卡，可以点「尝试切换 SIM 卡槽」。这会短暂切断 SIM 服务，随后尝试恢复原卡槽并重新核验 WFC。
+6. 如果界面提示卡槽恢复待确认，保持 SIM 原样、飞行模式开启，重新连上 Shizuku 后点「恢复原卡槽」。恢复确认前请保留 APK 及应用数据，其中保存了原始映射。
+
+首次试用建议避开依赖通话的时段。若试用时设备已运行 Magisk 版，请先在原版关闭后台自动重连，避免两个程序同时切槽。
