@@ -1,9 +1,9 @@
 # WifiCallingLab
 WFC Control for Android and Magisk
 
-## Magisk / Shizuku 整合预览版 0.6.0-preview.1
+## Magisk / Shizuku 整合预览版 0.6.0-preview.2
 
-[下载整合版 APK、Magisk 模块及源码](https://github.com/1e0sig/WifiCallingLab/releases/tag/v0.6.0-preview.1)
+[下载整合版 APK、Magisk 模块及源码](https://github.com/1e0sig/WifiCallingLab/releases/tag/v0.6.0-preview.2)
 
 同一个 WFC Control 应用内可选择 Magisk 或 Shizuku。**整合版和模式切换未经真机验证。** 旧 Magisk 版仅在 Redmi Note 12 Turbo（marble）、江南 4.0.5、Android 17、Magisk 31.1、VOXI 单实体 SIM 环境验证过。Shizuku 模式的 IMS 注册和卡槽复原仍待验证。
 
