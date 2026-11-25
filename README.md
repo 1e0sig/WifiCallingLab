@@ -1,9 +1,9 @@
 # WifiCallingLab
 WFC Control for Android and Magisk
 
-## Magisk 正式版 0.5.8
+## Magisk 正式版 0.5.9
 
-更新桌面图标。下载模块 ZIP，在 Magisk 中安装后重启。[下载正式版](https://github.com/1e0sig/WifiCallingLab/releases/tag/v0.5.8)
+更新桌面和连接成功通知的图标。下载模块 ZIP，在 Magisk 中安装后重启。[下载正式版](https://github.com/1e0sig/WifiCallingLab/releases/tag/v0.5.9)
 
 
 ## Magisk / Shizuku 整合预览版 0.6.0-preview.2
